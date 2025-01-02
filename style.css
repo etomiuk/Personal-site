@@ -46,6 +46,12 @@ h2 {
 }
 
 /* navbar CSS */
+
+#title {
+  background-image: url(./images/background-light.png);
+  background-size: cover;
+}
+
 #title > .container {
   display: flex;
   justify-content: center;
@@ -100,6 +106,11 @@ h2 {
 }
 
 /* Research CSS */
+#research-projects {
+  background-image: url(./images/background-light_180.png);
+  background-size: 85%;
+  background-repeat: no-repeat;
+}
 #research {
   padding: 50px 0px;
 }
@@ -168,6 +179,8 @@ h2 {
 /* Contact CSS */
 #contact {
   padding: 50px;
+  background-image: url("./images/background-dark.png");
+  background-size: cover;
 }
 
 #contact h2 {

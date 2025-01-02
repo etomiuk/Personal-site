@@ -47,12 +47,6 @@
         <h1><span style="color: #817096">Emma </span><br />Tomiuk</h1>
         <p>Researcher, musician, artist, and lifelong learner.</p>
       </div>
-      <!--
-      <img
-        src="./images/diamond-pattern.png"
-        alt="diamond background pattern"
-      />
-      -->
     </div>
 
     <!-- About me -->
@@ -123,123 +117,131 @@
     </div>
 
     <!-- Research -->
-    <div id="research">
-      <div class="text-block">
-        <h2>Research</h2>
-        <div class="grid-container">
-          <div class="grid-cell">
-            <p>Master's thesis</p>
-            <p class="school-name">McGill University</p>
-          </div>
-          <div class="grid-cell">
-            <p>Apple Vision Pro</p>
-            <p class="school-name">École de Technologie Supérieure</p>
-          </div>
-          <div class="grid-cell">
-            <p>ML & Pedagogy</p>
-            <p class="school-name">McGill University</p>
-          </div>
-          <div class="grid-cell">
-            <p>Musical Telepresence</p>
-            <p class="school-name">McGill University</p>
-          </div>
-          <div class="grid-cell">
-            <p>Music Cognition</p>
-            <p class="school-name">McGill University</p>
-          </div>
-          <div class="grid-cell">
-            <p>Active Learning in Biology</p>
-            <p class="school-name">McGill University</p>
+    <div id="research-projects">
+      <div id="research">
+        <div class="text-block">
+          <h2>Research</h2>
+          <div class="grid-container">
+            <div class="grid-cell">
+              <p>Master's thesis</p>
+              <p class="school-name">McGill University</p>
+            </div>
+            <div class="grid-cell">
+              <p>Apple Vision Pro</p>
+              <p class="school-name">École de Technologie Supérieure</p>
+            </div>
+            <div class="grid-cell">
+              <p>ML & Pedagogy</p>
+              <p class="school-name">McGill University</p>
+            </div>
+            <div class="grid-cell">
+              <p>Musical Telepresence</p>
+              <p class="school-name">McGill University</p>
+            </div>
+            <div class="grid-cell">
+              <p>Music Cognition</p>
+              <p class="school-name">McGill University</p>
+            </div>
+            <div class="grid-cell">
+              <p>Active Learning in Biology</p>
+              <p class="school-name">McGill University</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Past projects -->
-    <div id="projects">
-      <div class="text-block">
-        <h2>Miscellaneous Projects</h2>
+      <!-- Past projects -->
+      <div id="projects">
+        <div class="text-block">
+          <h2>Miscellaneous Projects</h2>
 
-        <!-- Carousel -->
-        <div id="carouselExampleCaptions" class="carousel slide container">
-          <div class="carousel-indicators">
+          <!-- Carousel -->
+          <div id="carouselExampleCaptions" class="carousel slide container">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./images/poem_crop.png"
+                  class="d-block w-100"
+                  alt="music sheet"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Musical poems</h5>
+                  <p>
+                    WIP: Series of short piano pieces that evoke feelings,
+                    emotions, events that might be suitable for a poem.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/placeholder.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Coming soon!</h5>
+                  <p>Description of project.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/placeholder.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Coming soon!</h5>
+                  <p>Description of project.</p>
+                </div>
+              </div>
+            </div>
             <button
+              class="carousel-control-prev"
               type="button"
               data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
             <button
+              class="carousel-control-next"
               type="button"
               data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="./images/poem_crop.png"
-                class="d-block w-100"
-                alt="music sheet"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Musical poems</h5>
-                <p>
-                  WIP: Series of short piano pieces that evoke feelings,
-                  emotions, events that might be suitable for a poem.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./images/placeholder.png"
-                class="d-block w-100"
-                alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Coming soon!</h5>
-                <p>Description of project.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./images/placeholder.png"
-                class="d-block w-100"
-                alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Coming soon!</h5>
-                <p>Description of project.</p>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
     </div>
