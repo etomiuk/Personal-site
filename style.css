@@ -65,6 +65,7 @@ h2 {
   background-color: #1e0d33;
   margin-top: 20px;
 }
+
 .nav a {
   color: #b4aac0;
 }
@@ -85,7 +86,7 @@ h2 {
 
 /* About CSS */
 #about {
-  padding: 50px 0px;
+  padding: 50px 0px 0px 0px;
 }
 #about h2 {
   text-align: end;
@@ -101,7 +102,7 @@ h2 {
 
 /* Education CSS */
 #education {
-  padding-bottom: 50px;
+  padding: 50px 0px;
 }
 #education p {
   margin: 0px;
@@ -206,6 +207,26 @@ h2 {
 
 #contact p {
   margin: 5px 0px 0px 0px;
+}
+
+#contact .grid-container {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+}
+
+#contact .grid-container .grid-cell {
+  width: auto;
+}
+
+#contact a {
+  color: #817096;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  color: #b4aac0;
 }
 
 /* Footer */
