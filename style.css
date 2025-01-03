@@ -30,7 +30,7 @@ h2 {
 }
 
 .text-block {
-  margin: 0px 200px;
+  margin: 0px 15%;
 }
 
 /* CSS for darker sections */
@@ -47,7 +47,6 @@ h2 {
 }
 
 /* navbar CSS */
-
 #title {
   background-image: url(./images/background-light.png);
   background-size: cover;
@@ -78,7 +77,7 @@ h2 {
 #name {
   display: inline-block;
   padding: 150px 0px;
-  margin-left: 200px;
+  margin-left: 15%;
 }
 #name p {
   color: #817096;
@@ -104,6 +103,13 @@ h2 {
 #education {
   padding: 50px 0px;
 }
+
+#education .grid-container {
+  display: grid;
+  grid-template-columns: 0.75fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
 #education p {
   margin: 0px;
 }
@@ -236,4 +242,69 @@ h2 {
 #footer p {
   text-align: center;
   margin: 0px;
+}
+
+/* Large screens and lower */
+@media (max-width: 992px) {
+  /* About */
+  #about h2 {
+    text-align: center;
+  }
+  #about .text-container {
+    justify-content: center;
+  }
+  #about .text-container .second {
+    width: 100%;
+  }
+
+  /* Education */
+  #education h2 {
+    text-align: center;
+  }
+
+  #education .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #education .grid-container .date {
+    text-align: end;
+  }
+
+  /* Projects */
+  #projects .carousel {
+    width: 100%;
+  }
+}
+
+/* Medium screens and lower */
+@media (max-width: 786px) {
+  /* Title */
+  #name {
+    display: block;
+    margin-right: 15%;
+    text-align: center;
+  }
+
+  /* Research */
+  #research .text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #research .grid-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+}
+
+/* X-small screens and lower */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
 }
