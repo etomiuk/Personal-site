@@ -26,7 +26,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .text-block {
@@ -87,21 +87,26 @@ h2 {
 #about {
   padding: 50px 0px 0px 0px;
 }
-#about h2 {
-  text-align: end;
-}
-#about .text-container {
+
+.flex-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
 }
-#about .text-container .second {
-  width: 45%;
+.flex-container .first {
+  flex-basis: 100%;
+  text-align: start;
+  order: -1;
+}
+#about .flex-container .second {
   text-align: justify;
+  align-self: flex-end;
+  flex-basis: 90%;
 }
 
 /* Education CSS */
 #education {
-  padding: 50px 0px;
+  padding: 150px 0px;
 }
 
 #education .grid-container {
@@ -162,7 +167,7 @@ h2 {
 
 /* Projects CSS */
 #projects {
-  padding: 50px 0px;
+  padding: 50px 0px 100px 0px;
 }
 #projects h2 {
   text-align: center;
@@ -193,6 +198,14 @@ h2 {
   padding: 0;
 }
 
+.carousel-caption a {
+  color: #b4aac0;
+  text-decoration: none;
+}
+
+.carousel-caption a:hover {
+  color: #817096;
+}
 /* Contact CSS */
 #contact {
   padding: 50px 0px;
@@ -254,6 +267,15 @@ h2 {
     justify-content: center;
   }
   #about .text-container .second {
+    width: 100%;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .flex-container .first {
+    order: 0;
     width: 100%;
   }
 
